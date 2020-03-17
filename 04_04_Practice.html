@@ -15,54 +15,57 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
+		{% comment %}
 		<style>
-			h1 {
-				border: 1px solid gray;
-			}
-			.row:nth-of-type(1) {
-				background-color: #02cbfb;
-			}
-			.row:nth-of-type(2) {
-				background-color: blue;
-			}
-			.row:nth-of-type(3) {
-				background-color: green;
-			}
-			.row:nth-of-type(4) {
-				background-color: yellow;
+			@media (min-width: 768px) and (max-width: 991px) {
+				#menu {
+					height: 210px;
+				}
 			}
 		</style>
+		{% endcomment %}
+
 		<title>Hello, world!</title>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<h1 class="text-center">Lorem</h1>
+				<div class="col-12 bg-info rounded">
+					<h1 class="text-uppercase text-center text-muted">
+						good soup restaurant
+					</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8">
-					<h1 class="text-center">Ipsum</h1>
+				<div class="col-md-2 col-sm-6 bg-danger rounded">
+					<ul class="list-unstyled">
+						<li><a href="#">Pasta</a></li>
+						<li><a href="#">Pizza</a></li>
+						<li><a href="#">Salad</a></li>
+						<li><a href="#">Drinks</a></li>
+					</ul>
 				</div>
-				<div class="col-md-4">
-					<h1 class="text-center">Ipsum</h1>
+				<div class="col-md-8 col-sm-6 bg-warning rounded">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ea
+						ipsum neque, sapiente eum obcaecati unde natus dolor eveniet,
+						maiores facere architecto possimus quaerat quo qui recusandae, quam
+						pariatur. Pariatur.
+					</p>
+				</div>
+				<div class="col-md-2 col-sm-12 bg-primary text-center rounded">
+					<ul class="list-unstyled">
+						<li>Chef</li>
+						<li>Steve</li>
+						<li>David</li>
+						<li>Joe</li>
+						<li>Han</li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4">
-					<h1 class="text-center">lorem</h1>
-				</div>
-				<div class="col-sm-4">
-					<h1 class="text-center">ipsum</h1>
-				</div>
-				<div class="col-sm-4">
-					<h1 class="text-center">dolor</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<h1 class="text-center">Lorem</h1>
+				<div class="col-12 bg-transparent">
+					<h3 class="text-center">Thank You!</h3>
 				</div>
 			</div>
 		</div>
